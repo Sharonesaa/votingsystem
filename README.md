@@ -1,6 +1,6 @@
-# Proyecto de Gestión de Candidatos
+# Proyecto de Gestión de votos
 
-Este es un proyecto para gestionar candidatos y campañas electorales. Permite a los usuarios autenticados crear, listar y gestionar campañas, así como postularse como candidatos a una campaña específica.
+Este es un proyecto para gestionar campañas electorales. Permite a los usuarios autenticados crear, listar y gestionar campañas, así como postularse como candidatos a una campaña específica.
 
 ## Características
 
