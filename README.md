@@ -61,7 +61,7 @@ Este proyecto está construido utilizando las siguientes tecnologías:
 - **Crea un archivo `.env` en el directorio del frontend con el siguiente contenido:**
 
    ```env
-   NEXT_PUBLIC_API_URL=http://localhost:3001/api
+   NEXT_PUBLIC_API_URL=http://localhost:3000
 
 - **Crea un archivo `.env` en el directorio del backend con el siguiente contenido:**
 
