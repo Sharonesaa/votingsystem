@@ -17,7 +17,8 @@ Este proyecto está construido utilizando las siguientes tecnologías:
   - [Next.js](https://nextjs.org/): Framework de React para aplicaciones web.
   - [TypeScript](https://www.typescriptlang.org/): Superconjunto de JavaScript que añade tipado estático.
   - [React Hooks](https://reactjs.org/docs/hooks-intro.html): Para la gestión del estado y ciclos de vida en componentes.
-  - **CSS**: Para el diseño y estilización de componentes.
+  - **Tailwind CSS**: Framework CSS para el diseño y estilización de componentes.
+  - **Cloudinary**: Para la gestión y almacenamiento de imágenes y archivos.
 
 - **Backend:**
   - [NestJS](https://nestjs.com/): Framework para Node.js que permite crear aplicaciones backend escalables.
@@ -25,14 +26,18 @@ Este proyecto está construido utilizando las siguientes tecnologías:
   - [PostgreSQL](https://www.postgresql.org/): Sistema de gestión de bases de datos relacional.
   - **JWT**: Para la autenticación segura de los usuarios.
   - **Multer**: Middleware para la subida de archivos en el backend.
+  - **Twilio**: Para el envío de notificaciones a los usuarios.
+  - **Mercado Pago**: Para el procesamiento de pagos en las campañas.
+  - **Autenticación por Google**: Para iniciar sesión de manera sencilla y segura.
 
+    
 ## Instalación y Configuración
 
 ### Requisitos
 
 - [Node.js](https://nodejs.org/) v16 o superior.
 - [PostgreSQL](https://www.postgresql.org/) como base de datos.
-- [Docker](https://www.docker.com/) (opcional para entornos de desarrollo).
+
 
 ### Pasos para la instalación
 
@@ -83,6 +88,7 @@ Asegúrate de ajustar las configuraciones para la base de datos y el JWT según 
 ### Autenticación
 - **POST** `/auth/login`: Iniciar sesión con credenciales de usuario.
 - **POST** `/auth/register`: Registrar un nuevo usuario.
+- **POST** `/auth/google`: Autenticación con Google.
 
 ### Campañas
 - **GET** `/campaigns/user/:userId`: Obtener todas las campañas asociadas a un usuario.
@@ -92,7 +98,13 @@ Asegúrate de ajustar las configuraciones para la base de datos y el JWT según 
 - **POST** `/candidates`: Crear un candidato asociado a una campaña.
 
 ### Subida de Archivos
-- **POST** `/upload`: Subir archivos asociados a una postulación de candidato.
+- **POST** `/upload`: Subir archivos asociados a una postulación de candidato. (Usando Cloudinary)
 
 ### Votación
 - **POST** `/vote`: Votar por un candidato específico en una campaña.
+
+### Notificaciones
+- **POST** `/notifications`: Enviar notificaciones a los usuarios. (Usando Twilio)
+
+### Pagos
+- **POST** `/payments`: Procesar pagos para las campañas. (Usando Mercado Pago)
